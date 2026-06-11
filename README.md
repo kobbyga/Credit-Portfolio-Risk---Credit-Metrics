@@ -191,4 +191,3 @@ All notebooks are self-contained with inline commentary explaining each step.
 ## Author
 
 **Kobby Akuoko**    
-[LinkedIn](#https://www.linkedin.com/in/kobby-a-5a9267282/) · [GitHub](#https://github.com/kobbyga)
