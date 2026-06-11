@@ -106,7 +106,7 @@ Stress tests are applied to key model inputs to evaluate portfolio sensitivity:
 Key charts produced by the model:
 
 - Portfolio loss distribution (histogram with EL, VaR and ES marked)
-  ![Loss Distribution](images/loss_distribution.png)
+  ![Loss Distribution](images/Loss_Distribution/2.1.png)
 - VaR and ES stability curves across increasing simulation trial counts
 
 ---
