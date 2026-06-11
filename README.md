@@ -51,7 +51,7 @@ credit-portfolio-risk-creditmetrics/
 
 ### 1. Rating Transition Framework
 
-Built a full rating migration model using Moody's historical transition probability matrices. Each obligor is assigned an initial rating, and the matrix maps the probability of migrating to any rating state (including default) over a one-year horizon. Loss at each terminal state is calculated from the discounted value of remaining cash flows, incorporating state-specific discount rates. This framework is implemented in Excel.
+Built a full rating migration model using Moody's historical transition probability matrices. Each obligor is assigned an initial rating, and the matrix maps the probability of migrating to any rating state (including default) over a one year horizon. Loss at each terminal state is calculated from the discounted value of remaining cash flows, incorporating state specific discount rates. This framework is implemented in Excel.
 
 ### 2. Recovery Rate Modelling
 
@@ -63,15 +63,15 @@ Nielsen-Siegel Parameters were estimated before being used to calculate the one 
 
 ### 4. Dependence Modelling via Asset Correlations
 
-Pairwise asset correlations are estimated from **equity return histories** as a proxy for underlying asset value co-movements, consistent with the structural credit model framework. The correlation matrix is computed in Excel and feeds directly into the Python simulation engine — obligors in correlated industries or geographies are more likely to migrate together, which is critical for capturing concentration risk.
+Pairwise asset correlations are estimated from **equity return histories** as a proxy for underlying asset value co-movements, consistent with the structural credit model framework. The correlation matrix is computed in Excel and feeds directly into the Python simulation engine: obligors in correlated industries or geographies are more likely to migrate together, which is critical for capturing concentration risk.
 
 ### 5. Monte Carlo Simulations (`2.1.ipynb`,`2.2.ipynb`, `2.4A.ipynb`, `2.4B.ipynb`, `2.4C.ipynb`, `2.4D.ipynb`, `2.4E.ipynb`)
 
-The simulation engine is implemented in Python to overcome Excel's row limitations and enable reproducible, large-scale trials. Using `numpy` for correlated normal draws and `pandas` for portfolio aggregation, each trial maps simulated asset returns to rating outcomes via transition thresholds derived from the transition matrix. Portfolio loss is summed across all obligors per trial and the full loss distribution is constructed. Results are visualised using `matplotlib`.
+The simulation engine is implemented in Python to overcome Excel's row limitations and enable reproducible, large scale trials. Using `numpy` for correlated normal draws and `pandas` for portfolio aggregation, each trial maps simulated asset returns to rating outcomes via transition thresholds derived from the transition matrix. Portfolio loss is summed across all obligors per trial and the full loss distribution is constructed. Results are visualised using `matplotlib`.
 
 ### 6. VaR Stability & Convergence Analysis (`2.3.ipynb`)
 
-A dedicated notebook tests the stability of Credit VaR and Expected Shortfall estimates as the number of simulation trials increases. Using `scipy.stats` for distributional analysis and `matplotlib` for visualisation, this confirms that the chosen trial count is sufficient for stable tail estimates — an important validation step that demonstrates awareness of Monte Carlo estimation error.
+A dedicated notebook tests the stability of Credit VaR and Expected Shortfall estimates as the number of simulation trials increases. Using `scipy.stats` for distributional analysis and `matplotlib` for visualisation, this confirms that the chosen trial count is sufficient for stable tail estimates: an important validation step that demonstrates awareness of Monte Carlo estimation error.
 
 ### 7. Stress Testing & Scenario Analysis
 
@@ -153,7 +153,7 @@ Run the notebooks in order:
 
 5. **`2.4E.ipynb`** — Monte Carlo simulation for scenario 2.4E. Reads portfolio inputs and correlation matrix, runs correlated asset return simulations, outputs the portfolio loss distribution with EL, VaR and ES estimates.
    
-All notebooks are self-contained with inline commentary explaining each step.
+All notebooks are self contained with inline commentary explaining each step.
 
 ---
 
@@ -164,7 +164,7 @@ All notebooks are self-contained with inline commentary explaining each step.
 | Rating transition probabilities | Moody's Annual Default Study |
 | Recovery rate assumptions | Moody's historical LGD data by seniority |
 | Asset correlations | Market equity return histories (proxied from public data) |
-| Portfolio exposures | Hypothetical multi-name corporate portfolio |
+| Portfolio exposures | Hypothetical multi name corporate portfolio |
 
 ---
 
@@ -180,9 +180,9 @@ All notebooks are self-contained with inline commentary explaining each step.
 ## Potential Extensions
 
 - **Gaussian or t-copula** to more flexibly model tail dependence between obligors beyond linear correlation
-- **CDS-implied PDs** to replace historical transition matrices with market-implied default probabilities, making the model forward-looking
+- **CDS implied PDs** to replace historical transition matrices with market-implied default probabilities, making the model forward-looking
 - **Incremental VaR** calculation to formally decompose portfolio risk to individual obligors
-- **Multi-period horizon** simulation to model the evolution of credit quality over 3–5 years
+- **Multi period horizon** simulation to model the evolution of credit quality over 3–5 years
 - **Interactive dashboard** using Plotly or Streamlit to allow scenario inputs to be adjusted dynamically
 
 ---
