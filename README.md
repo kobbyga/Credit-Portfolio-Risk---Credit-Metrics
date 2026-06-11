@@ -31,11 +31,16 @@ credit-portfolio-risk-creditmetrics/
 │   ├── 2.4D.ipynb                    # Correlation Shock
 │   ├── 2.4E.ipynb                    # Combined Shock               
 ├── images/
-│   ├── loss_distribution.png
-│   ├── var_es_results.png
-│   └── scenario_comparison.png
-└── docs/
-    └── methodology_summary.pdf       # Optional: write-up of approach and results
+│   ├── loss distribution/
+|       ├── 2.1.png
+|       ├── 2.2.png
+|       ├── 2.4A.png
+|       ├── 2.4B.png
+|       ├── 2.4C.png
+|       ├── 2.4D.png
+|       ├── 2.4E.png
+|    └── var_stability.png
+
 ```
 
 ---
