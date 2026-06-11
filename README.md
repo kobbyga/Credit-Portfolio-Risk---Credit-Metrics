@@ -31,7 +31,7 @@ credit-portfolio-risk-creditmetrics/
 │   ├── 2.4D.ipynb                    # Correlation Shock
 │   ├── 2.4E.ipynb                    # Combined Shock               
 ├── images/
-│   ├── loss distribution/
+│   ├── Loss Distribution/
 |       ├── 2.1.png
 |       ├── 2.2.png
 |       ├── 2.4A.png
@@ -39,7 +39,10 @@ credit-portfolio-risk-creditmetrics/
 |       ├── 2.4C.png
 |       ├── 2.4D.png
 |       ├── 2.4E.png
-|   └── var_stability.png
+|   └── VaR Stability/
+|       ├── Distribution Across Replications.png
+|       ├── ES.png
+|       ├── VaR.png
 
 ```
 
