@@ -124,11 +124,6 @@ Key charts produced by the model:
 | **VaR Calculation (2.2)** | Input Data, Credit Metrics |
 | **Raw Data Needed for 2.4** | Treasury rates, correlation calculation |
 | **Parameter Calculation (2.4)** | 2.4A, 2.4B, 2.4C, 2.4D, 2.4E |
-| **VaR Calculation (2.4A)** | Input Data, Credit Metrics |
-| **VaR Calculation (2.4B)** | Input Data, Credit Metrics |
-| **VaR Calculation (2.4C)** | Input Data, Credit Metrics |
-| **VaR Calculation (2.4D)** | Input Data, Credit Metrics |
-| **VaR Calculation (2.4E)** | Input Data, Credit Metrics |
 
 ---
 
