@@ -108,6 +108,7 @@ Key charts produced by the model:
 - Portfolio loss distribution (histogram with EL, VaR and ES marked)
   ![Loss Distribution](images/loss_distribution/2.1.png)
 - VaR and ES stability curves across increasing simulation trial counts
+  ![VaR Stability](images/var_stability/var.png)
 
 ---
 
@@ -115,13 +116,19 @@ Key charts produced by the model:
 
 | Sheet | Description |
 |---|---|
-| **START HERE** | Navigation guide and input summary |
-| **Inputs** | Portfolio exposures, ratings, maturities, seniority; all user-configurable cells in yellow |
-| **Transition Matrix** | Moody's historical 1Y transition probabilities; base and stressed versions |
-| **Recovery Rates** | Beta distribution parameters by seniority; simulated recovery draws |
-| **Correlations** | Asset return data, pairwise correlation matrix |
-| **Loss Distribution** | Aggregated portfolio loss by trial; histogram and percentile analysis |
-| **Stress Testing** | Scenario comparison table and sensitivity charts |
+| **Transition Probabilities** | Moody's 2025 1Y transition matrix, transition Probabilities for each Company |
+| **Valuation** | Variable recovery rates, 1Y forward valuations, current discounted portfolio value |
+| **Correlation Calculations** | Correlation matrix, cholesky matrix |
+| **VaR Calculation (2.1)** | Input Data, Credit Metrics |
+| **Parameter Calculation (for 2.2)** | 2Y transition matrix, 2Y forward valuations |
+| **VaR Calculation (2.2)** | Input Data, Credit Metrics |
+| **Raw Data Needed for 2.4** | Treasury rates, correlation calculation |
+| **Parameter Calculation (2.4)** | 2.4A, 2.4B, 2.4C, 2.4D, 2.4E |
+| **VaR Calculation (2.4A)** | Input Data, Credit Metrics |
+| **VaR Calculation (2.4B)** | Input Data, Credit Metrics |
+| **VaR Calculation (2.4C)** | Input Data, Credit Metrics |
+| **VaR Calculation (2.4D)** | Input Data, Credit Metrics |
+| **VaR Calculation (2.4E)** | Input Data, Credit Metrics |
 
 ---
 
