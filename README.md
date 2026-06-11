@@ -20,6 +20,7 @@ Quantify the credit risk of a diversified corporate loan portfolio by modelling 
 ```
 credit-portfolio-risk-creditmetrics/
 ├── README.md
+├── Results.md
 ├── CreditPortfolio_Model.xlsx        # Full Excel model: inputs, transitions, correlations
 ├── 2.1.ipynb                         # Monte Carlo simulation engine for 1 year Absolute VaR and ES
 ├── 2.2.ipynb                         # Monte Carlo simulation engine for 2 year Absolute VaR and ES
