@@ -39,7 +39,7 @@ credit-portfolio-risk-creditmetrics/
 |       ├── 2.4C.png
 |       ├── 2.4D.png
 |       ├── 2.4E.png
-|    └── var_stability.png
+|   └── var_stability.png
 
 ```
 
