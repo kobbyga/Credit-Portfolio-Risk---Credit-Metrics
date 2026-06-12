@@ -45,6 +45,15 @@ credit-portfolio-risk-creditmetrics/
         ├── ES.png
         └── VaR.png 
 ```
+
+## Portfolio
+
+| Name | Ticker | Rating | Principle | Maturity | Coupon |
+|---|---|---|---|---|---|
+| Boyd Gaming Corp | BYD | Baa3| $4,000,000 | 3 Years | 6% |
+| Brinker International Inc | EAT | Baa3| $5,000,000 | 4 Years | 7% |
+| American Airlines Group Inc | BYD | B1| $6,000,000 | 5 Years | 8% |
+
 ---
 
 ## Methodology
@@ -85,24 +94,7 @@ Stress tests are applied to key model inputs to evaluate portfolio sensitivity:
 
 ---
 
-## Key Inputs
-
-| Name | Ticker | Principle | Maturity | Coupon |
-|---|---|---|---|---|
-| Boyd Gaming Corp | BYD | $4,000,000 | 3 Years | 6% |
-| Brinker International Inc | EAT | $5,000,000 | 4 Years | 7% |
-| American Airlines Group Inc | BYD | $6,000,000 | 5 Years | 8% |
-
-## Key Outputs
-
-| Metric | 2.1 | 2.2 | 2.4A | 2.4B | 2.4C | 2.4D | 2.4E |
-|---|---|---|---|---|---|---|---|
-| Absolute VaR (95%) | $634,810 | $919,802 | $8,028,045 | $1,082,392 | $5,390,434 | $634,810 | $12,110,273 |
-| Expected Shortfall (ES) (95%) | $1,152,837 | $2,180,151 | $9,820,818 | $1,632,125 | $5,715,583 | $1,353,652 | $12,820,680 |
-| Absolute VaR (99%) | $1,287,834 | $3,932,021 | $11,248,735 | $1,829,621 | $6,018,477 | 1,488,487 | $13,261,642 |
-| Expected Shortfall (ES) (99%) | $3,429,336 | $5,091,824 | $11,863,163 | $4,128,973 | $6,660,275 | $3,682,102 | 13,647,185 |
-
-Key charts produced by the model:
+## Key Charts Produced by the Model
 
 - Portfolio loss distribution (histogram with EL, VaR and ES marked)
   ![Loss Distribution](images/loss_distribution/2.1.png)
